@@ -6,20 +6,18 @@
  * Submission Date: Oct 29, 2025
  */
 
- * 
- */
-
-class Item <E extends Number & Comparable<E> >{
+class Item<E extends Number & Comparable<E>> {
 	private E item;
+
 	public Item(E value) {
 		item = value;
 	}
-	
-	public void setItem(E value){
+
+	public void setItem(E value) {
 		item = value;
 	}
-	
-	public E getItem(){
+
+	public E getItem() {
 		return item;
 	}
 }

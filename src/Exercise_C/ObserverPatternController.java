@@ -6,6 +6,8 @@
  * Submission Date: Oct 29, 2025
  */
 
+package src.Exercises_AB;
+
 public class ObserverPatternController {
 	public static void main(String[] s) {
 		double[] arr = { 10, 20, 33, 44, 50, 30, 60, 70, 80, 10, 11, 23, 34, 55 };

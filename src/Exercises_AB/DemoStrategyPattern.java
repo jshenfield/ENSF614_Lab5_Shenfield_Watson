@@ -6,6 +6,8 @@
  * Submission Date: Oct 29, 2025
  */
 
+package src.Exercises_AB;
+
 import java.util.Random;
 
 public class DemoStrategyPattern {
