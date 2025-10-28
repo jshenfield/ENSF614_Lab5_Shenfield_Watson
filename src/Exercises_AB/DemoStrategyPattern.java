@@ -30,12 +30,12 @@ public class DemoStrategyPattern {
 		v1.display();
 
 		// choose algorithm bubble sort as a strategy to sort object v1
-		v1.setSortStrategy(new BubbleSorter<Double>());
+		v1.setSortStrategy(new BubbleSort<Double>());
 
 		// perform algorithm bubble sort to v1
 		v1.performSort();
 
-		System.out.println("\nThe values in MyVector object v1 after performing BoubleSorter is:");
+		System.out.println("\nThe values in MyVector object v1 after performing BubbleSort is:");
 		v1.display();
 
 		// create a MyVector<Integer> object V2
@@ -50,10 +50,28 @@ public class DemoStrategyPattern {
 
 		System.out.println("\nThe original values in v2 object are:");
 		v2.display();
-		v2.setSortStrategy(new InsertionSorter<Integer>());
+		v2.setSortStrategy(new InsertionSort<Integer>());
 		;
 		v2.performSort();
-		System.out.println("\nThe values in MyVector object v2 after performing InsertionSorter is:");
+		System.out.println("\nThe values in MyVector object v2 after performing InsertionSort is:");
 		v2.display();
+
+		// create a MyVector<Integer> object V2
+		MyVector<Integer> v3 = new MyVector<Integer>(50);
+
+		// populate v3 with 5 randomly generated numbers
+		for (int i = 4; i >= 0; i--) {
+			Item<Integer> item;
+			item = new Item<Integer>(Integer.valueOf(rand.nextInt(50)));
+			v3.add(item);
+		}
+
+		System.out.println("\nThe original values in v3 object are: (copied test pattern from v2):");
+		v3.display();
+		v3.setSortStrategy(new SelectionSort<Integer>());
+		;
+		v3.performSort();
+		System.out.println("\nThe values in MyVector object v2 after performing SelectionSort is:");
+		v3.display();
 	}
 }

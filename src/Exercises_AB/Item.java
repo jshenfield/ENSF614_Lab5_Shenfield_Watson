@@ -6,6 +6,8 @@
  * Submission Date: Oct 29, 2025
  */
 
+package src.Exercises_AB;
+
 class Item<E extends Number & Comparable<E>> {
 	private E item;
 

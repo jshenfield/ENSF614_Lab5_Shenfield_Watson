@@ -8,6 +8,27 @@
 
 package src.Exercises_AB;
 
-public class InsertionSort {
+import java.util.ArrayList;
 
+public class InsertionSort<E extends Number & Comparable<E>> implements Sorter<E> {
+
+	@Override
+	public void sort(ArrayList<Item<E>> array) {
+		int n = array.size();
+
+		for (int i = 1; i < n; i++) {
+			Item<E> keyItem = array.get(i); // current value
+			E keyValue = keyItem.getItem();
+
+			int j = i - 1;
+
+			// search for place to insert keyValue
+			while (j >= 0 && array.get(j).getItem().compareTo(keyValue) > 0) {
+				array.set(j + 1, array.get(j));
+				j--;
+			}
+
+			array.set(j + 1, keyItem);
+		}
+	}
 }

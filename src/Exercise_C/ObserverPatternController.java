@@ -6,7 +6,7 @@
  * Submission Date: Oct 29, 2025
  */
 
-package src.Exercises_AB;
+package src.Exercises_C;
 
 public class ObserverPatternController {
 	public static void main(String[] s) {
