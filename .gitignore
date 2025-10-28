@@ -1,4 +1,13 @@
 /DemoStrategyPattern.class
 /Item.class
 /ObserverPatternController.class
+
 /MyVector.class
+
+/Observer.class
+/Subject.class
+/DoubleArrayListSubject.class
+/FiveRowsTable_Observer.class
+/ThreeColumnsTable_Observer.class
+/ThreeColumnTable_Observer.class
+/OneRow_Observer.class
